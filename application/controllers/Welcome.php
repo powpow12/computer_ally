@@ -58,7 +58,7 @@ class Welcome extends CI_Controller {
 	{
 		//echo "this is a test!";
 		//
-		$this->load->model('login', '', TRUE);
+		//$this->load->model('login', '', TRUE);
 		$this->load->view('home');
 	}
 }

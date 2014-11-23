@@ -1,4 +1,30 @@
+<?php
+$attributes = array(
+		'role'          => 'form'
+);
+$email = array(
+        'name'          => 'username',
+        'id'            => 'inputEmail3',
+		'class'			=> 'form-control',
+        'value'         => '',
+        //'maxlength'     => '100',
+        'size'          => '50',
+		'placeholder'   => 'Email'
 
+);
+
+$password = array(
+        'name'          => 'password',
+        'id'            => 'inputPassword3',
+		'class'			=> 'form-control',
+        'value'         => '',
+       // 'maxlength'     => '100',
+        'size'          => '50',
+		'placeholder'   => 'Password'
+
+);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -61,21 +87,20 @@
         </div>
       </div>
       
+      
       <div class="row">
-        <form class="form-horizontal" role="form">
+        <div class="col-lg-4 col-lg-offset-4">
+        <?php echo form_open('email/send', $attributes);?>
         <div class="form-group">
-        	<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-        	<div class="col-sm-4">
-        		<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-       		</div>
+        	<label for="inputEmail3" >Email</label>          
+        	<?php echo form_input($email);?>
+       		
         </div>
-        
+       
         <div class="form-group">
-        	<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-        	<div class="col-sm-4">
-        		<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-        	</div>
-        </div>
+        	<label for="inputPassword3">Password</label>
+			<?php echo form_password($password);?>	
+       </div>
         
         <div class="form-group">
         	<div class="col-sm-offset-2 col-sm-10">
@@ -93,7 +118,7 @@
             </div>
         </div>
         </form>
-        
+        </div>
       </div>
 
     </div><!-- /.container -->
