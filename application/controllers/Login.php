@@ -37,7 +37,7 @@
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Login extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -59,7 +59,8 @@ class Welcome extends CI_Controller {
 		//echo "this is a test!";
 		//
 		//$this->load->model('login', '', TRUE);
-		$this->load->view('login_view');
+		
+		$this->load->view('home');
 	}
 }
 

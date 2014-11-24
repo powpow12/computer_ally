@@ -90,7 +90,7 @@ $password = array(
       
       <div class="row">
         <div class="col-lg-4 col-lg-offset-4">
-        <?php echo form_open('email/send', $attributes);?>
+        <?php echo form_open('verifylogin', $attributes);?>
         <div class="form-group">
         	<label for="inputEmail3" >Email</label>          
         	<?php echo form_input($email);?>
