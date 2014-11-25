@@ -1,6 +1,6 @@
 <?php
 
-import 'header.html';
+
 $attributes = array(
 		'role'          => 'form'
 );
@@ -26,8 +26,8 @@ $password = array(
 
 );
 
-?>
 
+?>
 
 
   <body>
@@ -97,5 +97,3 @@ $password = array(
         </div>
       </div>
 
-    
-<?php import 'footer.html';?>

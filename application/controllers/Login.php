@@ -59,8 +59,9 @@ class Login extends CI_Controller {
 		//echo "this is a test!";
 		//
 		//$this->load->model('login', '', TRUE);
-		
+		$this->load->view('templates/header');
 		$this->load->view('home');
+		$this->load->view('templates/footer');
 	}
 }
 
