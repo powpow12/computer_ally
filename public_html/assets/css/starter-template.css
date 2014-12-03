@@ -14,3 +14,16 @@ body > .container {
 	padding-top:60px;
 
 }
+
+div.row.plus_ten{
+	padding-top:10px;
+}
+
+//disable bootstrap legend
+legend{
+	width:inherit !important;
+	border:none !important;
+}
+fieldset{
+	border:2px groove threedface;
+}
