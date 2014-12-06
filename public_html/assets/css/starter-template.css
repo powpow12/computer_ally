@@ -18,7 +18,7 @@ body > .container {
 div.row.plus_ten{
 	padding-top:10px;
 }
-
+<img src="../../user_guide_src/source/images/appflowchart.gif" width="697" height="205">
 //disable bootstrap legend
 legend{
 	width:inherit !important;
